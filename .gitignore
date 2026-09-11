@@ -1,0 +1,79 @@
+# Local configuration, calibration, captures and runtime state
+/local/
+/secrets/
+/sdk/
+/toolchains/
+/system-images/
+/artifacts/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.log
+/.ssh/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# Frontend and generated build outputs
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+.next/
+*.tsbuildinfo
+
+# Firmware toolchain outputs
+.pio/
+Debug/
+Release/
+*.o
+*.elf
+*.hex
+cmake-build-*/
+/firmware/**/*.bin
+/firmware/**/*.map
+/firmware/**/*.su
+/firmware/**/*.uvguix.*
+
+# Keep required prebuilt libraries (*.a), linker scripts and project files.
+# Generated libraries belong in the ignored build directories above.
+
+# CAD temporary and recovery files; final designs remain tracked
+*.dwl
+*.dwl2
+*.DWL
+*.DWL2
+/hardware/mechanical/**/*.[bB][aA][kK]
+/hardware/mechanical/**/*.[sS][vV]$
+/hardware/mechanical/**/*.[aA][cC]$
+/hardware/electronics/**/*-backups/
+/hardware/electronics/**/*.kicad_prl
+/hardware/electronics/**/~$*
+
+# Editor and OS temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*.local.json
+
+# Intentionally tracked: STEP/DWG/DXF, CAD source projects, BOMs,
+# dependency lockfiles, shared editor settings and configuration examples.

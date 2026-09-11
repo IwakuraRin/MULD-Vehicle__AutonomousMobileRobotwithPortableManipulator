@@ -1,0 +1,14 @@
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Treat CAD exchange files as opaque assets; Git LFS is not enabled yet.
+*.[sS][tT][eE][pP] binary
+*.[sS][tT][pP] binary
+*.[dD][wW][gG] binary
+*.[dD][xX][fF] binary
+*.[pP][dD][fF] binary
